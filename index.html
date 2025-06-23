@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Poedagar Watches</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0; padding: 0;
+    background: #fafafa;
+    color: #222;
+  }
+  header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .product {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .product img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #eaeaea;
+  }
+  .product h2 {
+    margin: 1rem 0 0.25rem 0;
+    font-size: 1.2rem;
+  }
+  .product p.description {
+    font-size: 0.85rem;
+    color: #555;
+    flex-grow: 1;
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+  }
+  .product .price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  label {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  select {
+    width: 100%;
+    padding: 0.4rem;
+    margin: 0.3rem 0 1rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  form {
+    margin-top: auto;
+  }
+  button.paypal-btn {
+    background: #ffc439;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    transition: background-color 0.3s ease;
+  }
+  button.paypal-btn:hover {
+    background: #e6b233;
+  }
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+  }
+  @media (max-width: 400px) {
+    header {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>Poedagar Watches</header>
+<main>
+  <section class="products">
+    <!-- Watch 1 -->
+    <article class="product" id="watch1">
+      <img src="https://via.placeholder.com/400?text=Poedagar+930+Quartz+Leather+Strap" alt="Poedagar 930 Quartz Leather Strap" />
+      <h2>Poedagar 930 Quartz Leather Strap (Unisex)</h2>
+      <p class="description">
+Package Included:
+1 x POEDAGAR Clock
+1 x POEDAGAR Box
+1 x Watch wipe
+1 x Warranty card
+
+After-Sales Service:
+Any questions, please contact us by email, we will try our best to deal with it for you. We will reply within 24 hours.
+      </p>
+      <div class="price">$30 USD</div>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <!-- PayPal payment setup -->
+        <input type="hidden" name="business" value="wuhnderfizz@gmail.com" />
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="item_name" value="Poedagar 930 Quartz Leather Strap (Unisex)" />
+        <input type="hidden" name="amount" value="30.00" />
+        <input type="hidden" name="currency_code" value="USD" />
+        
+        <label for="color1">Color:</label>
+        <select name="os0" id="color1" required onchange="document.getElementById('colorInput1').value=this.value;">
+          <option value="" disabled selected>Select Color</option>
+          <option value="Green">Green</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Brown">Brown</option>
+        </select>
+        <input type="hidden" name="on0" value="Color" />
+        <input type="hidden" name="os1" id="colorInput1" value="" />
+
+        <button type="submit" class="paypal-btn">Buy Now</button>
+      </form>
+    </article>
+
+    <!-- Watch 2 -->
+    <article class="product" id="watch2">
+      <img src="https://via.placeholder.com/400?text=Poedagar+930+Quartz+Stainless+Steel+Strap" alt="Poedagar 930 Quartz Stainless Steel Strap" />
+      <h2>Poedagar 930 Quartz Stainless Steel Strap (Unisex)</h2>
+      <p class="description">
+Package Included:
+1 x POEDAGAR Clock
+1 x POEDAGAR Box
+1 x Watch wipe
+1 x Warranty card
+
+After-Sales Service:
+Any questions, please contact us by email, we will try our best to deal with it for you. We will reply within 24 hours.
+      </p>
+      <div class="price">$30 USD</div>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <!-- PayPal payment setup -->
+        <input type="hidden" name="business" value="wuhnderfizz@gmail.com" />
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="item_name" value="Poedagar 930 Quartz Stainless Steel Strap (Unisex)" />
+        <input type="hidden" name="amount" value="30.00" />
+        <input type="hidden" name="currency_code" value="USD" />
+
+        <label for="color2">Color:</label>
+        <select name="os0" id="color2" required onchange="document.getElementById('colorInput2').value=this.value;">
+          <option value="" disabled selected>Select Color</option>
+          <option value="Green">Green</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="White">White</option>
+        </select>
+        <input type="hidden" name="on0" value="Color" />
+        <input type="hidden" name="os1" id="colorInput2" value="" />
+
+        <button type="submit" class="paypal-btn">Buy Now</button>
+      </form>
+    </article>
+  </section>
+</main>
+<footer>
+  Contact us at <a href="mailto:wuhnderfizz@gmail.com">wuhnderfizz@gmail.com</a>
+</footer>
+
+<script>
+  // Initialize hidden inputs on page load
+  document.getElementById('color1').addEventListener('change', function() {
+    document.getElementById('colorInput1').value = this.value;
+  });
+  document.getElementById('color2').addEventListener('change', function() {
+    document.getElementById('colorInput2').value = this.value;
+  });
+</script>
+</body>
+</html>
